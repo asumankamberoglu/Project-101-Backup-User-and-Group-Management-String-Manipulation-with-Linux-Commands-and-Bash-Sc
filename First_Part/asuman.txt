@@ -1,0 +1,18 @@
+  302  cd Project-101/
+  303  cd First_Part/
+  304  cat event_history.csv | grep -i ^serdar
+  305  cat event_history.csv | grep -i ^serdar | grep 'TerminateInstances'
+  306  cat event_history.csv | grep -i ^serdar | grep 'TerminateInstances'| cut -d , -f1,4,10
+  307  cat event_history.csv | grep -i ^serdar | grep 'TerminateInstances'| cut -d , -f1,4,9
+  308  cat event_history.csv | grep -i ^serdar | grep 'TerminateInstances'| cut -d , -f1,4,10 |awk -F: '{print $2}'
+  309  cat event_history.csv | grep -i ^serdar | grep 'TerminateInstances'| cut -d , -f1,4,10 |awk -F: '{print $2}'| tr -d '"}] '
+  310  cat event_history.csv | grep -i ^serdar | grep 'TerminateInstances'| cut -d , -f1,4,10 |awk -F: '{print $2}'| tr -d '"}] ' | tee result.txt
+  311  touch security_issue.sh
+  312  vim security_issue.sh
+  313  vim security_issue.sh
+  314  chmod +x securtiy_issue.sh
+  315  chmod +x securtiy_issue.sh
+  316  ls -al
+  317  chmod +x security_issue.sh
+  318  ls -al
+  319  history | tee asuman.txt

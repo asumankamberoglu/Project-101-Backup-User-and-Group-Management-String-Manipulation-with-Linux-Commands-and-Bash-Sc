@@ -26,3 +26,12 @@
 
 # Display the username, password, and the host where the user was created.
 
+read -p "Enter the username (login) :" username
+read -p "Enter the name :" name
+read -p "Enter the title :" title
+
+
+sudo useradd -m -d /home/$name -c "$title" $username
+sudo passwd $username
+tail -1 /etc/passwd
+sudo passwd -e $username
